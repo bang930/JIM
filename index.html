@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap & Lightbox2 範例</title>
+
+    <!-- 引入 Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- 引入 Lightbox2 CSS -->
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+
+    <style>
+        /* 範例用的簡單樣式 */
+        .container {
+            padding-top: 50px;
+        }
+        .img-thumbnail {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 1 / 1; /* 保持正方形 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mb-4">UD2 行動網頁練習 Lightbox2 in Bootstrap</h1>
+        <p>1113211502</p>
+        
+        <div class="row">
+            <!-- 第一張圖片 -->
+            <div class="col-md-4 mb-4">
+                <a href="https://picsum.photos/id/1018/1000/1000" 
+                   data-lightbox="example-set" 
+                   data-title="第一張圖片 - 來自 Picsum"
+                   class="d-block">
+                    <img src="https://picsum.photos/id/1018/300/300" 
+                         alt="圖片 1 縮圖" 
+                         class="img-thumbnail shadow-sm">
+                </a>
+            </div>
+
+            <!-- 第二張圖片 -->
+            <div class="col-md-4 mb-4">
+                <a href="https://picsum.photos/id/1043/1000/1000" 
+                   data-lightbox="example-set" 
+                   data-title="第二張圖片 - 來自 Picsum"
+                   class="d-block">
+                    <img src="https://picsum.photos/id/1043/300/300" 
+                         alt="圖片 2 縮圖" 
+                         class="img-thumbnail shadow-sm">
+                </a>
+            </div>
+
+            <!-- 第三張圖片 -->
+            <div class="col-md-4 mb-4">
+                <a href="https://picsum.photos/id/1025/1000/1000" 
+                   data-lightbox="example-set" 
+                   data-title="第三張圖片 - 來自 Picsum"
+                   class="d-block">
+                    <img src="https://picsum.photos/id/1025/300/300" 
+                         alt="圖片 3 縮圖" 
+                         class="img-thumbnail shadow-sm">
+                </a>
+            </div>
+        </div>
+
+        <!-- 按鈕 -->
+        <button type="button" class="btn btn-primary mt-3">這是一個 Bootstrap 按鈕</button>
+    </div>
+
+    <!-- 引入 jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <!-- 引入 Lightbox2 JavaScript -->
+    <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+
+    <!-- 引入 Bootstrap JavaScript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
