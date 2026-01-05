@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap & Lightbox2 範例</title>
 
-    <!-- 引入 Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- 引入 Lightbox2 CSS -->
-    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 
     <style>
-        /* 範例用的簡單樣式 */
         .container {
             padding-top: 50px;
+            padding-bottom: 50px;
         }
         .img-thumbnail {
             width: 100%;
             height: auto;
             object-fit: cover;
             aspect-ratio: 1 / 1; /* 保持正方形 */
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .img-thumbnail:hover {
+            transform: scale(1.02); /* 滑鼠移過去稍微放大 */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1 class="mb-4">UD2 行動網頁練習 Lightbox2 in Bootstrap</h1>
-        <p>1113211502</p>
+        <h1 class="mb-4 text-center">UD2 行動網頁練習 Lightbox2 in Bootstrap</h1>
+        <p class="text-center text-muted">學號：1113211023</p>
         
+        <hr class="mb-5">
+
         <div class="row">
-            <!-- 第一張圖片 -->
             <div class="col-md-4 mb-4">
                 <a href="https://picsum.photos/id/1018/1000/1000" 
                    data-lightbox="example-set" 
@@ -43,7 +47,6 @@
                 </a>
             </div>
 
-            <!-- 第二張圖片 -->
             <div class="col-md-4 mb-4">
                 <a href="https://picsum.photos/id/1043/1000/1000" 
                    data-lightbox="example-set" 
@@ -55,7 +58,6 @@
                 </a>
             </div>
 
-            <!-- 第三張圖片 -->
             <div class="col-md-4 mb-4">
                 <a href="https://picsum.photos/id/1025/1000/1000" 
                    data-lightbox="example-set" 
@@ -68,18 +70,16 @@
             </div>
         </div>
 
-        <!-- 按鈕 -->
-        <button type="button" class="btn btn-primary mt-3">這是一個 Bootstrap 按鈕</button>
+        <div class="text-center mt-4">
+            <button type="button" class="btn btn-primary btn-lg">這是一個 Bootstrap 按鈕</button>
+        </div>
     </div>
 
-    <!-- 引入 jQuery -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     
-    <!-- 引入 Lightbox2 JavaScript -->
-    <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
-    <!-- 引入 Bootstrap JavaScript -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
